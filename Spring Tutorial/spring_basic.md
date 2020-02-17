@@ -1,12 +1,17 @@
 # Spring Tutorial
 
 - Project: https://github.com/spring-projects/spring-petclinic
-- ÇÁ·ÎÁ§Æ® ºôµå: ./mvnw package
-mvnw(maven wrapper): Apache MavenÀ» ÇÁ·ÎÁ§Æ®¿¡¼­ ¿ä±¸ÇÏ´Â ¹öÀüÀ¸·Î À¯ÁöÇÏ±â À§ÇØ »ç¿ëÇÏ´Â µµ±¸(Maven ¼³Ä¡ ¾øÀÌ ºôµå °¡´É)
-.mvn/wrapper/maven-wrapper.properties ÆÄÀÏÀÇ distributionUrl ¼Ó¼º¿¡ Maven ¹öÀü Á¤ÀÇ
-- ÇÁ·ÎÁ§Æ® ½ÇÇà: java -jar target/*.jar
-jar(JAVA Archive): º¹¼ö°³ÀÇ ÀÚ¹Ù Å¬·¡½º ÆÄÀÏ, ¸®¼Ò½º, ¸ŞÅ¸µ¥ÀÌÅÍ¸¦ ÇÏ³ªÀÇ ÆÄÀÏ·Î ¸ğ¾Æ ¹èÆ÷ÇÏ±â À§ÇÑ ¼ÒÇÁÆ®¿ş¾î ÆĞÅ°Áö Æ÷¸Ë
--  Apache Tomcat
--- Apache: Å¬¶óÀÌ¾ğÆ® ¿äÃ»ÀÌ ¿ÔÀ»¶§¸¸ ÀÀ´äÇÏ´Â Á¤Àû À¥ ¼­¹ö/ Á¤Àû µ¥ÀÌÅÍ(HTML, CSS, ÀÌ¹ÌÁö µî)¸¸ Ã³¸®/80 Æ÷Æ®
--- Tomcat: µ¿Àû À¥ÆäÀÌÁö¸¦ ¸¸µé±â À§ÇÑ À¥(¼­ºí¸´) ÄÁÅ×ÀÌ³Ê/8080 Æ÷Æ®
--- Apache Tomcat: Apache´Â Á¤ÀûÀÎ µ¥ÀÌÅÍ¸¸ Ã³¸®, JSP Ã³¸®´Â À¥ ÄÁÅ×ÀÌ³Ê·Î ³Ñ°ÜÁÖ¾î ºĞ»êÃ³¸®, WAS(Web Application Server)
+- í”„ë¡œì íŠ¸ ë¹Œë“œ: ./mvnw package
+
+mvnw(maven wrapper): Apache Mavenì„ í”„ë¡œì íŠ¸ì—ì„œ ìš”êµ¬í•˜ëŠ” ë²„ì „ìœ¼ë¡œ ìœ ì§€í•˜ê¸° ìœ„í•´ ì‚¬ìš©í•˜ëŠ” ë„êµ¬(Maven ì„¤ì¹˜ ì—†ì´ ë¹Œë“œ ê°€ëŠ¥)
+.mvn/wrapper/maven-wrapper.properties íŒŒì¼ì˜ distributionUrl ì†ì„±ì— Maven ë²„ì „ ì •ì˜
+- í”„ë¡œì íŠ¸ ì‹¤í–‰: java -jar target/*.jar
+
+jar(JAVA Archive): ë³µìˆ˜ê°œì˜ ìë°” í´ë˜ìŠ¤ íŒŒì¼, ë¦¬ì†ŒìŠ¤, ë©”íƒ€ë°ì´í„°ë¥¼ í•˜ë‚˜ì˜ íŒŒì¼ë¡œ ëª¨ì•„ ë°°í¬í•˜ê¸° ìœ„í•œ ì†Œí”„íŠ¸ì›¨ì–´ íŒ¨í‚¤ì§€ í¬ë§·
+- Apache Tomcat
+
+  * Apache: í´ë¼ì´ì–¸íŠ¸ ìš”ì²­ì´ ì™”ì„ë•Œë§Œ ì‘ë‹µí•˜ëŠ” ì •ì  ì›¹ ì„œë²„/ ì •ì  ë°ì´í„°(HTML, CSS, ì´ë¯¸ì§€ ë“±)ë§Œ ì²˜ë¦¬/80 í¬íŠ¸
+
+  * Tomcat: ë™ì  ì›¹í˜ì´ì§€ë¥¼ ë§Œë“¤ê¸° ìœ„í•œ ì›¹(ì„œë¸”ë¦¿) ì»¨í…Œì´ë„ˆ/8080 í¬íŠ¸
+
+  * Apache Tomcat: ApacheëŠ” ì •ì ì¸ ë°ì´í„°ë§Œ ì²˜ë¦¬, JSP ì²˜ë¦¬ëŠ” ì›¹ ì»¨í…Œì´ë„ˆë¡œ ë„˜ê²¨ì£¼ì–´ ë¶„ì‚°ì²˜ë¦¬, WAS(Web Application Server)
