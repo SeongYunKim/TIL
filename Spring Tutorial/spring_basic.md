@@ -15,3 +15,9 @@ jar(JAVA Archive): 복수개의 자바 클래스 파일, 리소스, 메타데이
   * Tomcat: 동적 웹페이지를 만들기 위한 웹(서블릿) 컨테이너/8080 포트
 
   * Apache Tomcat: Apache는 정적인 데이터만 처리, JSP 처리는 웹 컨테이너로 넘겨주어 분산처리, WAS(Web Application Server)
+  
+- [ERROR] The port may already be in use or the connector may be misconfigured.
+  
+  [SOLUTION] netstat -ano | findstr \<Port Number\>
+ 
+               taskkill /F /PID <Process Id>
