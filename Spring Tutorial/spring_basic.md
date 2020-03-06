@@ -18,6 +18,8 @@ jar(JAVA Archive): 복수개의 자바 클래스 파일, 리소스, 메타데이
   
 - [ERROR] The port may already be in use or the connector may be misconfigured.
   
-  [SOLUTION] netstat -ano | findstr \<Port Number\>
- 
-               taskkill /F /PID <Process Id>
+  [SOLUTION] 
+  
+  netstat -ano | findstr \<Port Number\>
+  
+  taskkill /F /PID \<Process Id\>
