@@ -40,7 +40,9 @@ ForwardIterator lower_bound (ForwardIterator first, ForwardIterator last, const 
 
 int main() {
   printf("index: %d value: %d\n", lower_bound(arr, arr + n, key) - arr, arr[lower_bound(arr, arr + n, key) - arr]);
-  printf("index: %d value: %d\n", lower_bound(v.begin(), v.end(), key) - v.begin(), arr[lower_bound(v.begin(), v.end(), key) - v.begin()]);
+  printf("index: %d ", lower_bound(v.begin(), v.end(), key) - v.begin());
+  auto it = lower_bound(v.begin(), v.end(), key);
+  printf("value: %d\n", *it);
 }
 ```
 
@@ -85,7 +87,9 @@ ForwardIterator upper_bound (ForwardIterator first, ForwardIterator last, const 
 
 int main() {
   printf("index: %d value: %d\n", upper_bound(arr, arr + n, key) - arr, arr[upper_bound(arr, arr + n, key) - arr]);
-  printf("index: %d value: %d\n", upper_bound(v.begin(), v.end(), key) - v.begin(), arr[upper_bound(v.begin(), v.end(), key) - v.begin()]);
+  printf("index: %d ", upper_bound(v.begin(), v.end(), key) - v.begin());
+  auto it = upper_bound(v.begin(), v.end(), key);
+  printf("value: %d\n", *it);
 }
 ```
 
