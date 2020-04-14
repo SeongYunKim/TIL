@@ -43,3 +43,57 @@
   - ```pop()```:  스택의 제일 뒷 원소 제거
 
   - ```top()```: 스택의 제일 뒷 원소 반환
+  
+## #include\<vector\>
+
+- Vector
+
+  - ```vector<자료형> v;```
+  
+  - ```v[index]```: 벡터의 index번째 원소 참조 및 수정
+  
+  - ```push_back(element)```: 벡터의 제일 뒤에 원소를 추가
+
+  - ```pop_back()```:  벡터의 제일 뒷 원소 제거
+
+  - ```begin()```: 벡터의 제일 앞 원소 가리키는 iterator 반환
+
+  - ```end()```: 벡터의 제일 뒷 원소 가리키는 iterator 반환
+
+  - ```v2 = v1;```로 벡터 복사
+  
+    - ```vector<int> v2(v1);```로 생성자를 활용한 벡터 복사도 가능
+    
+  - ```v1 == v2```: 두 벡터의 원소 각각이 일치하면 True 반환
+  
+  - ```insert(iterator, element)```: 벡터의 iterator가 가리키는 위치에 원소를 삽입(**비효율적**)
+  
+  - ```erase(iterator)```: 벡터의 iterator가 가리키는 위치의 원소 제거(**비효율적**)
+
+## #include\<deque\>
+
+- Double Ended Queue
+
+  - ```deque<자료형> dq;```
+  
+  - ```dq[index]```: 덱의 index번째 원소 참조 및 수정
+  
+  - ```push_back(element)```: 덱의 제일 뒤에 원소를 추가
+  
+  - **```push_front(element)```: 덱의 제일 앞에 원소를 추가**
+
+  - ```pop_back()```:  덱의 제일 뒷 원소 제거
+  
+  - ```pop_front()```: 덱의 제일 앞 원소 제거
+
+  - ```begin()```: 덱의 제일 앞 원소 가리키는 iterator 반환
+
+  - ```end()```: 덱의 제일 뒷 원소 가리키는 iterator 반환
+  
+  - ```insert(iterator, element)```: 덱의 iterator가 가리키는 위치에 원소를 삽입(**비효율적**)
+  
+  - ```erase(iterator)```: 덱의 iterator가 가리키는 위치의 원소 제거(**비효율적**)
+  
+  - 벡터는 capacity가 고갈되면 **전체 메모리 크기만큼 reallocate**하지만, 덱은 **일정 크기를 가지는 블록 단위로 확장**
+
+    - **저장 원소가 많고 메모리 할당량이 큰 경우** 벡터에 비해 확장 비용이 작음
