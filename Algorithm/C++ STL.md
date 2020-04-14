@@ -69,7 +69,7 @@
   - ```insert(iterator, element)```: 벡터의 iterator가 가리키는 위치에 원소를 삽입(**비효율적**)
   
   - ```erase(iterator)```: 벡터의 iterator가 가리키는 위치의 원소 제거(**비효율적**)
-
+  
 ## #include\<deque\>
 
 - Double Ended Queue
@@ -97,3 +97,68 @@
   - 벡터는 capacity가 고갈되면 **전체 메모리 크기만큼 reallocate**하지만, 덱은 **일정 크기를 가지는 블록 단위로 확장**
 
     - **저장 원소가 많고 메모리 할당량이 큰 경우** 벡터에 비해 확장 비용이 작음
+    
+## #include\<set\>
+
+  - Set
+  
+    - ```set<자료형> s;```
+
+    - **```insert(key)```: 셋에 키를 정렬된 위치에 삽입**
+
+    - ```erase(key)```: 셋의 iterator가 가리키는 위치의 키 제거
+
+    - ```find(key)```: 셋에서 키를 가리키는 iterator 반환
+
+      - **키가 존재하지 않는다면 s.end() 반환**
+
+    - iterator를 사용한 키 참조
+
+    ```cpp
+    //auto iter; 도 가능
+    set<int>::iterator iter;
+    for(iter = s.begin(); iter != s.end(); iter++) {
+      cout << *iter << " ";
+    }
+    ```
+  
+## #include\<map\>
+
+  - Map
+  
+    - ```map<key 자료형, value 자료형> m;```
+
+    - ```insert({key, value})```: 맵에 {키, 밸류}를 정렬된 위치에 삽입
+
+    - ```find(key)```: 맵에서 키를 가리키는 iterator 반환
+
+      - **키가 존재하지 않는다면 m.end() 반환**
+
+    - **```m[key] = value;```로 맵에 {키, 밸류} 삽입 또는 수정 가능**
+  
+## #include\<algorithm\>
+
+  - Sort: 특정 범위의 원소들을 정렬
+  
+    ```cpp
+    //원소의 개수가 n개인 배열 오름차순 정렬
+    sort(arr, arr + n);
+    //벡터 오름차순 정렬
+    sort(v.begin(), v.end());
+    //벡터 내림차순 정렬
+    sort(v.begin(), v.end(), greater<자료형>());
+    //벡터 사용자 정의 함수 사용 정렬
+    bool cmp(자료형 a, 자료형 b){
+      // 내림차순!!!
+      return a > b;
+    }
+    sort(v.begin(), v.end(), cmp);
+    ```
+    
+  - Binary Search(Lower bound, Upper bound): **정렬된 원소**에 대해서만 작동
+  
+    - ```lower_bound```: 특정 값보다 **작지 않은(크거나 같은)** 첫번째 원소의 iterator를 반환(반환)
+    
+    - ```upper_bound```: 특정 값보다 **큰** 첫번째 원소의 iterator 반환(상한)
+    
+    - 사용 예시는 [여기](https://github.com/SeongYunKim/TIL/blob/master/Algorithm/Lower%20bound%2C%20Upper%20bound.md "binary_search") 참고
