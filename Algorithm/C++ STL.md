@@ -155,10 +155,34 @@
     sort(v.begin(), v.end(), cmp);
     ```
     
-  - Binary Search(Lower bound, Upper bound): **정렬된 원소**에 대해서만 작동
+  - Binary Search: **정렬된 원소**에 대해서만 작동
   
-    - ```lower_bound```: 특정 값보다 **작지 않은(크거나 같은)** 첫번째 원소의 iterator를 반환(반환)
+    - ```lower_bound```: 특정 값보다 **작지 않은(크거나 같은)** 첫번째 원소의 iterator를 반환(하한)
     
     - ```upper_bound```: 특정 값보다 **큰** 첫번째 원소의 iterator 반환(상한)
     
     - 사용 예시는 [여기](https://github.com/SeongYunKim/TIL/blob/master/Algorithm/Lower%20bound%2C%20Upper%20bound.md "binary_search") 참고
+
+
+  - Permutation: **정렬된 원소**에 대해서만 작동
+  
+    - ```next_permutation```: **다음 수열**을 구하고 true 반환. 다음 수열이 없다면 false 반환
+    
+    - ```prev_permutation```: **이전 수열**을 구하고 true 반환. 이전 수열이 없다면 false 반환
+    
+    ```cpp
+    sort(v.begin(), v.end());
+    do {
+      for(int i = 0; i < v.size(); i++)
+        printf("%d ", v[i]);
+      printf("\n");
+    } while(next_permutation(v.begin(), v.end());
+    ```
+    
+    - Permutation를 사용하여 Combination 구하기
+    
+    1. nCr에 대해, **전체 길이가 n, 1의 개수가 r, 나머지가 0인 보조 수열** 생성
+    
+    2. 보조 수열에 대한 순열(next_permutation) 구하기
+    
+    3. 보조 수열에서 값이 1인 인덱스의 값을 원래 자료에서 추출
