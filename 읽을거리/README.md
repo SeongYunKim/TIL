@@ -4,4 +4,6 @@
 
 - [기존의 사고 방식을 깨부수는 함수형 사고](https://evan-moon.github.io/2019/12/15/about-functional-thinking/ "Functional Thinking")
 
-- [aop를 이용한 oauth2 캐시 적용하기](https://woowabros.github.io/experience/2019/03/05/aop-oauth2-redis.html "AOP_Oauth2_Cache")
+- [aop를 이용한 oauth2 캐시 적용하기](https://woowabros.github.io/experience/2019/03/05/aop-oauth2-redis.html "AOP Oauth2 Cache")
+
+- [대용량 세션을 위한 로드 밸런서](https://d2.naver.com/helloworld/605418 "Load Balancer for Large Session")
