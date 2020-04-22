@@ -155,6 +155,17 @@
     sort(v.begin(), v.end(), cmp);
     ```
     
+  - Reverse: 원소들의 순서를 역순으로
+  
+    ```cpp
+    //원소의 개수가 n개인 배열 역순으로
+    reverse(arr, arr + n);
+    //벡터 원소 역순으로
+    reverse(v.begin(), v.end());
+    //문자열 역순으로
+    reverse(s.begin(), s.end());
+    ```
+    
   - Binary Search: **정렬된 원소**에 대해서만 작동
   
     - ```lower_bound```: 특정 값보다 **작지 않은(크거나 같은)** 첫번째 원소의 iterator를 반환(하한)
