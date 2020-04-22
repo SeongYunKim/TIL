@@ -35,3 +35,23 @@
     - 연산 속도가 느리므로 **+ 연산자 사용 권장**
   
   - ```pop_back()```: 문자열의 제일 뒷 문자 제거 
+  
+## #include \<cstring\>
+
+- Cstring
+
+  - ```memset(ptr, value, size)```: **바이트 단위**로 메모리를 초기화
+  
+    - **1 바이트 변수(char, unsigned char 등)가 아닌 변수를 초기화할 때는 0, -1 이외의 값으로 초기화 금지!!**
+    
+    ```cpp
+    //정수 배열을 0으로 초기화
+    int arr1[100][100];
+    memset(map, 0, sizeof(map1));
+    //정수 배열을 -1로 초기화
+    int arr2[100][100];
+    memset(map, -1, sizeof(map2));
+    //정수 배열을 2139062143(int형 최대 크기가 2147438647)로 초기화
+    int arr3[100][100];
+    memset(map, 0x7f, sizeof(map3))
+    ```
