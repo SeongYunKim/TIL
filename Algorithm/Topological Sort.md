@@ -20,7 +20,7 @@
 void topological_sort() {
   //NODE는 정점의 개수, EDGE는 간선의 개수
   int in_degree[NODE] = { 0 };
-  vector<int> v[NODE];
+  vector<int> edge[NODE];
   queue<int> q;
   
   for(int i = 0; i < EDGE; i++){
@@ -39,8 +39,8 @@ void topological_sort() {
     int cur = q.front();
     q.pop();
     //2. 큐에서 원소를 꺼내 연결된 모든 간선을 제거
-    for(int i = 0; i < v[cur].size(); i++){
-      int next = v[cur][i];
+    for(int i = 0; i < edge[cur].size(); i++){
+      int next = edge[cur][i];
       in_degree[next]--;
       //3. 간선 제거 후 진입차수가 0이 된 정점을 큐에 삽입
       if(in_degree[next] == 0){
