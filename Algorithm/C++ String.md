@@ -47,11 +47,11 @@
     ```cpp
     //정수 배열을 0으로 초기화
     int arr1[100][100];
-    memset(map, 0, sizeof(map1));
+    memset(arr1, 0, sizeof(arr1));
     //정수 배열을 -1로 초기화
     int arr2[100][100];
-    memset(map, -1, sizeof(map2));
+    memset(arr2, -1, sizeof(arr2));
     //정수 배열을 2139062143(int형 최대 크기가 2147438647)로 초기화
     int arr3[100][100];
-    memset(map, 0x7f, sizeof(map3))
+    memset(arr2, 0x7f, sizeof(arr3))
     ```
