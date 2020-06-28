@@ -1,4 +1,4 @@
-﻿# WebRTC
+# WebRTC
 
 > [High Performance Browser Networking](https://hpbn.co/)의 [18. WebRTC](https://hpbn.co/webrtc/)를 번역하며 정리한 문서입니다.
 
@@ -178,6 +178,10 @@
     - `createOffer()`을 통해 `SDP description 생성`
     
     - Signaling Channel을 통해 SDP description을 교환하고 `setLocalDescription(), setRemoteDescription()`을 통해 `peer-to-peer 연결의 매개변수 negotiate`
+    
+- Signaling Transaction Flow
+    
+![signaling_transaction_flow](https://media.prod.mdn.mozit.cloud/attachments/2016/01/27/12363/9d667775214ae0422fae606050f60c1e/WebRTC%20-%20Signaling%20Diagram.svg)
 
 ### Interactive Connectivity Establishment(ICE)
 
@@ -204,6 +208,8 @@
             - RTCPeerConnection에 등록 후, `SDP Offer을 생성하고 Signaling Channel을 통해 다른 peer로 전송`
             
             - 다른 peer가 SDP Offer를 수신하면, 수신한 `candidate IP가 포함된 description을 setRemoteDescription()`
+    
+            ![ICE_candidate_exchange_process](https://media.prod.mdn.mozit.cloud/attachments/2016/01/27/12365/b5bcd9ecac08ae0bc89b6a3e08cfe93c/WebRTC%20-%20ICE%20Candidate%20Exchange.svg)
         
         - peer 간 Connectivity check
         
