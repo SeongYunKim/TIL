@@ -52,9 +52,9 @@ int find(int x) {
 }
 
 void union(int x, int y) {
-  x = find(x);
-  y = find(y);
-  if(x != y)
-    root[y] = x;
+  int rootX = find(x);
+  int rootY = find(y);
+  if(rootX != rootY)
+    root[rootY] = rootX;
 }
 ```
