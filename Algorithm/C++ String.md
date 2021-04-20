@@ -53,5 +53,5 @@
     memset(arr2, -1, sizeof(arr2));
     //정수 배열을 2139062143(int형 최대 크기가 2147438647)로 초기화
     int arr3[100][100];
-    memset(arr2, 0x7f, sizeof(arr3))
+    memset(arr3, 0x7f, sizeof(arr3))
     ```
